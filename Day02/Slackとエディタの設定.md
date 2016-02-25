@@ -67,16 +67,16 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 ### 必須系
 - AutofileName
-パスも含めたファイル名の入力補助
+    - パスも含めたファイル名の入力補助
 
 - Bracket Highlighter
-カッコの対応関係が見やすくなる
+    - カッコの対応関係が見やすくなる
 
 - TrainingSpace
-不要なスペースの削除
+    - 不要なスペースの削除
 
 - All Auto Complete
-入力補完の強化
+    - 入力補完の強化
 
 ### 入力補助
 - HTML5
@@ -86,28 +86,28 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 ### あると便利かも
 - emmet
-HTMLコーディングが爆速になる
-→ ~/Library/Application Support/Sublime Text 3/Packages/Default をつくって、Defalutのキーバインド編集
-→ Emmetの設定ファイルを開くには
+    - HTMLコーディングが爆速になる
+    - ~/Library/Application Support/Sublime Text 3/Packages/Default をつくって、Defalutのキーバインド編集
+    - Emmetの設定ファイルを開くには
 メニュー>Preferences>Package Settings>Emmet>Settings - User
 
-convertUTF8
-- 文字コードをUTFに統一してくれる
+- convertUTF8
+    - 文字コードをUTFに統一してくれる
 
 - SideBarEnhancements
-サイドバーの強化
+    - サイドバーの強化
 
 - boundkeys
-キーバインド(ショートカット)の確認
+    - キーバインド(ショートカット)の確認
 
 - Abacus → com+shift+p → Abacusでいいかも
-コードの整形
+    - コードの整形
 
 - color picker
-カラープロパティの補助
+    - カラープロパティの補助
 
 - Browser Refresh
-エディタからブラウザの更新ができる
+    - エディタからブラウザの更新ができる
 
 ## Sublimeの設定
 おすすめ設定
