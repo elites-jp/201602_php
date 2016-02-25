@@ -187,7 +187,6 @@ $stmt->execute();
 $sql = "insert into members (name, email, password) values ('test', 'test@test.com', '0000')";
 $stmt = $dbh->prepare($sql);
 $stmt->execute();
-
 ```
 
 例えば、フォームに入力された値をデータベースに追加するときに、いちいちSQLの準備しなくてはならない。"insert ~ values " までは同じSQL文であり、違いがあるのは "values" 以降 なのだから、そこだけ可変にすれば良いですよね？ ということ。
@@ -249,7 +248,6 @@ $stmt->bindParam(":name", $name);
 
 // プリペアードステートメントの実行
 $stmt->execute();
-
 ```
 
 ### 2.4. レコードの削除
@@ -274,8 +272,6 @@ $stmt->bindParam(":id", $id);
 
 // プリペアードステートメントの実行
 $stmt->execute();
-
-
 ```
 
 ## 3. PDOによるデータベース操作手順のまとめ
@@ -299,7 +295,6 @@ $stmt->execute();
 
 // 結果の受け取り(指定の仕方いろいろ)
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ```
 
 

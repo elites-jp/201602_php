@@ -66,7 +66,6 @@ drop database test;
 
 -- MySQLの終了
 exit;
-
 ```
 
 ### 1.4. もうちょい使ってみる
@@ -160,7 +159,6 @@ select * from members;
 -- 特定のカラムのレコードを見る
 -- select カラム名 from テーブル名;
 select id from members;
-
 ```
 
 ### 3.2. 練習問題
@@ -211,7 +209,6 @@ select id from members;
 -- テーブルを削除する
 
 -- データベースを削除する
-
 ```
 
 ## 答え
@@ -242,13 +239,10 @@ drop table products;
 
 -- データベースを削除する
 drop database projects;
-
-
 ```
+
 ## 4. カラムの設定
 カラムにはいろいろとオプションを設定することが出来る。
-
-
 
 ### 4.1. 主キー(Primary Key)
 レコードのidは次のような特徴がある。
@@ -314,7 +308,6 @@ insert into members (name) values
 
 -- 中身を確認(ちゃんとidが入っている)
 select * from members;
-
 ```
 
 ```txt:membersテーブルの中身
@@ -351,7 +344,6 @@ insert into members (name, password) values ('kashiwagi', '1111');
 
 -- 中身の確認(length_of_yearsに注目)
 select * from members;
-
 ```
 
 
@@ -462,7 +454,6 @@ select * from sales order by sale desc limit 2 offset 4;
 ```sql:count.sql
 select count(sale) from sales;
 select count(*) from sales;
-
 ```
 
 ## 6. CRUD操作その2
@@ -491,7 +482,6 @@ update sales set name = 'HOKKAIDO' where id = 17;
 
 -- 注意！: 全てのレコードを変更してしまう！
 update sales set name = 'japan';
-
 ```
 
 ### 6.2. レコードの削除
@@ -519,7 +509,6 @@ delete from sales where id = 12;
 
 -- saleが200未満のレコードを削除
 delete from sales where sale < 200;
-
 ```
 
 ## 7. 他のコマンド
