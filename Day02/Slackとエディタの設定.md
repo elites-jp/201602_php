@@ -1,15 +1,16 @@
 # 環境構築その2
-Slack
-GitHubの登録
-SublimeTextの設定
+- Slack
+- GitHubの登録
+- SublimeTextの設定
 
 ## GitHubアカウントの登録
-GitHubのアカウント登録を行う
+GitHubのアカウント登録を行う(あとで使う)
 [ここから登録しましょう](https://github.com/)
+[アクセス登録参考ページ](http://qiita.com/kooohei/items/361da3c9dbb6e0c7946b)
 
 ## Slack
-[todo]アカウント招待をGitHubでやる方法？
-- チャットツール
+- エンジニアに人気のチャットツール
+- ソースコードの共有や技術的なお知らせで使います
 - 講義内容についての質問はこちらからどうぞ
 
 初期設定
@@ -17,7 +18,7 @@ GitHubのアカウント登録を行う
 - チーム名は`elites-camp-201602`
 - チーム参加への招待メールを送ります。メールBOXを確認して下さい
 - メールのリンクからチームへ参加する
-- username:「 kashiwagi 」 のように名前で登録をお願いします。
+- username:「kashiwagi」のように名前で登録をお願いします。
 - デフォルトアイコンが似ていて紛らわしいので手持ちの写真でアイコンを切り替える
 - スマホアプリもあります
 - チャネル別運用ポリシー
@@ -40,34 +41,27 @@ GitHubのアカウント登録を行う
 
 
 ## フォントの導入
-デフォルトでもいいけど、プログラミングにオススメなフォントを導入する
+- 見やすいフォントにすると視認性が向上する
+- デフォルトでもいいけど、プログラミングにオススメなフォントを導入する
+- [フォントインストールの参考ページ](http://nelog.jp/how-to-use-ricty-diminished-font)
 
-[todo]Rictyの設定方法とリンク挿入
 
-
-
-## Package Control
+## Package Control(重要！)
 - 便利なPackageをカンタンにインストールできる設定を行う
 - 「 View > Show Console 」と進み、導入コードを貼り付ける
 - 終わったらSublimeTextを再起動する
 
 ```txt:PackageControl
 import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-
 ```
 
-SublimeText2の場合は下記
-
-```txt:SublimeText2の場合
-import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')
-```
+![Package Controlの導入](https://i.gyazo.com/7d50e859329487f11d6794eba8f6a62d.gif)
 
 
 ## Packageのインストール
-「 command+shift+P 」を同時に押した後、「 install 」と入力する
-「 Package Control: Install Package 」と表示されるのでこれを選択する
+「command+shift+P」を同時に押した後、「install」と入力する
+「Package Control: Install Package 」と表示されるのでこれを選択する
 パッケージはいろいろなサイトで解説されているので気になれば調べるとよい
-
 
 ## おすすめパッケージ
 
@@ -84,15 +78,6 @@ import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa
 - All Auto Complete
 入力補完の強化
 
-- emmet
-爆速HTMLコーディング
-→ ~/Library/Application Support/Sublime Text 3/Packages/Default をつくって、Defalutのキーバインド編集
-→ Emmetの設定ファイルを開くには
-メニュー>Preferences>Package Settings>Emmet>Settings - User
-
-convertUTF8
-- 文字コードをUTFに統一してくれる
-
 ### 入力補助
 - HTML5
 - AndyPHP
@@ -100,6 +85,15 @@ convertUTF8
 - jQuery
 
 ### あると便利かも
+- emmet
+HTMLコーディングが爆速になる
+→ ~/Library/Application Support/Sublime Text 3/Packages/Default をつくって、Defalutのキーバインド編集
+→ Emmetの設定ファイルを開くには
+メニュー>Preferences>Package Settings>Emmet>Settings - User
+
+convertUTF8
+- 文字コードをUTFに統一してくれる
+
 - SideBarEnhancements
 サイドバーの強化
 
@@ -204,7 +198,6 @@ convertUTF8
 { "keys": ["ctrl+shift+i"], "command": "reindent" , "args": { "single_line": false } },
 
 ]
-
 ```
 
 
