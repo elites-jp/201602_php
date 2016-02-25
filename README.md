@@ -136,9 +136,17 @@ XSS/CSRF/SQLインジェクション
 オートロード/
 
 ### <a href="" target="_blank">オブジェクト指向その3</a>
-継承/オーバーライド/parent
 
-- staicでCalクラス
+
+[残りTodo]
+- 継承周り
+    - 継承/オーバーライド/parent
+    - そもそもあんまり触れなくてもいいかも
+- static
+    - 練習問題も兼ねてCalculateクラス実装
+- オートロード(とrequireとinclude)
+- モデル周りの実装
+- フロントコントローラの実装
 
 
 ### <a href="" target="_blank"></a>
